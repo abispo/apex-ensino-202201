@@ -698,3 +698,37 @@ INSERT INTO perfis (id, nome, data_nascimento) VALUES
 	(6, 'Daiane', '1991-05-03'),
 	(7, 'Eduarda', '1992-10-11'),
 	(8, 'Giselle', '1995-04-09');
+
+
+/* Selecionando todos os alunos que estão matriculados em algum curso */
+SELECT p.nome, t.id, c.nome, t.data_inicio, t.data_fim FROM perfis p 
+INNER JOIN alunos_turmas at2 
+ON p.id = at2.aluno_id
+INNER JOIN turmas t 
+ON at2.turma_id = t.id
+INNER JOIN cursos c 
+ON t.curso_id = c.id
+ORDER BY t.id;
+
+
+/* Visualizando quantos alunos estão matriculados por turma */
+SELECT c.nome, count(t.id) AS "Quantidade de alunos", t.data_inicio, t.data_fim FROM perfis p 
+INNER JOIN alunos_turmas at2 
+ON p.id = at2.aluno_id
+INNER JOIN turmas t 
+ON at2.turma_id = t.id
+INNER JOIN cursos c 
+ON t.curso_id = c.id
+GROUP BY t.id
+ORDER BY t.id;
+
+/* Exercícios JOINS */
+/* Utilizar o banco de dados de 20220112 (tabelas employees, orders, etc)
+ */
+
+/* Retornar todos os clientes que fizeram pedidos (tabelas customers e orders) */
+
+
+/* Retornar todos os clientes, que fizeram compras ou não */
+/* tabelas customers e orders */
+
