@@ -687,3 +687,14 @@ SELECT i.id, i.nome, c.nome, t.data_inicio, t.data_fim FROM instrutores i
 INNER JOIN instrutores_turmas it ON i.id = it.instrutor_id
 INNER JOIN turmas t ON it.turma_id = t.id
 INNER JOIN cursos c ON t.curso_id = c.id;
+
+-- Inserindo alunos que não estão em turmas
+INSERT INTO usuarios (email, senha) VALUES
+	('daiane@email.com', '12345'),
+	('eduarda@email.com', '12345'),
+	('giselle@email.com', '12345');
+	
+INSERT INTO perfis (id, nome, data_nascimento) VALUES
+	(6, 'Daiane', '1991-05-03'),
+	(7, 'Eduarda', '1992-10-11'),
+	(8, 'Giselle', '1995-04-09');
