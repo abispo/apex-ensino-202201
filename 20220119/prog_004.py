@@ -26,3 +26,17 @@ if __name__ == '__main__':
     # float()   -> Números que possuem casa decimal
     # complex() -> Números complexos    (3j)
     print(f"{numero_1} + {numero_2} = {resultado}")
+
+    # Exercício 1
+    # Criar uma rotina que receba 3 notas (a, b, c)
+    # Calcular a média das notas e imprimir no console (a + b + c / 3 )
+    # Se a média for maior ou igual a 7, imprimir a mensagem "Você foi aprovado."
+
+    # Exercício 2
+    # Escreva uma rotina que receba a altura e o peso de uma pessoa, e com essas informações faça o cálculo
+    # do IMC. A fórmula para cálculo do IMC de uma pessoa é a seguinte: IMC = peso / (altura * 2). Após isso, indicar
+    # Se a pessoa está obesa ou não seguindo as regras abaixo:
+    # IMC menor que 18.5 -> Pessoa com baixo peso
+    # IMC maior ou igual a 18.5 e menor que 25 -> Pessoa com peso adequado
+    # IMC maior ou igual a 25 e menor que 30 -> Pessoa com sobrepeso
+    # IMC maior ou igual a 30 -> Pessoa com obesidade
