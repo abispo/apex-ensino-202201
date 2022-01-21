@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
     # Exercício 2
     # Escreva uma rotina que receba a altura e o peso de uma pessoa, e com essas informações faça o cálculo
-    # do IMC. A fórmula para cálculo do IMC de uma pessoa é a seguinte: IMC = peso / (altura * 2). Após isso, indicar
+    # do IMC. A fórmula para cálculo do IMC de uma pessoa é a seguinte: IMC = peso / (altura * altura). Após isso, indicar
     # Se a pessoa está obesa ou não seguindo as regras abaixo:
     # IMC menor que 18.5 -> Pessoa com baixo peso
     # IMC maior ou igual a 18.5 e menor que 25 -> Pessoa com peso adequado
