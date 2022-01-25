@@ -46,3 +46,17 @@
     Porcentagem de comissão: 20%
     Valor da comissão: 2517.85
     ```
+
+2. Escreva uma função que receba uma lista com 3 números, e retorne o maior entre eles.
+
+3. Escreva uma função que receba uma lista de 5 números, e retorne outra lista com os quadrados de cada número:
+    * Lista de entrada: [4, 7, 3, 5, 2]
+    * Lista de saída: [16, 49, 9, 25, 4]
+
+4. Escreva uma função que receba uma lista de números, e retorne apenas os números ímpares
+
+5. Escreva uma função que chame outra função
+
+6. Escreva uma função que receba uma quantidade variável de argumentos, e imprima a quantidade de argumentos e quais foram esses argumentos
+
+7. Escreva uma função que receba uma quantidade variável de argumentos por posição e imprima a quantidade de argumentos e quais foram esses argumentos e seus valores
