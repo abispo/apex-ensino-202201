@@ -49,4 +49,4 @@ id;nome;salario
 ````
 * Deve-se criar um método na classe ArquivoCSV chamado salvar
 * Esse método vai receber a lista de registros que devem ser salvos (incluindo o cabeçalho do arquivo)
-* O id é gerado usando a função uuid4() do pacote uuid (`from uuid import uuid4()`)
+* O id é gerado usando a função str(uuid4()) do pacote uuid (`from uuid import uuid4()`)
