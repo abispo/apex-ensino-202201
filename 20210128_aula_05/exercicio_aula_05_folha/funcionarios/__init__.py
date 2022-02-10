@@ -1,0 +1,4 @@
+
+from .funcionario_clt import FuncionarioCLT
+from .funcionario_terceirizado import FuncionarioTerceirizado
+from .funcionario_comissionado import FuncionarioComissionado
