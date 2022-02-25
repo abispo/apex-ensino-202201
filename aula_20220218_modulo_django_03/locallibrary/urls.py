@@ -1,4 +1,4 @@
-"""mysite URL Configuration
+"""locallibrary URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -16,10 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('polls/', include('polls.urls')),
-    path('users/', include('users.urls')),
-    path('posts/', include('posts.urls'))
+    path('catalog/', include('catalog.urls'))
 ]

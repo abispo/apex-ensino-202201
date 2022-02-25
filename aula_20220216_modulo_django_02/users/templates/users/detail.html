@@ -1,0 +1,18 @@
+<h1>{{ user.name }}</h1>
+
+<h3>{{ user.email }}</h3>
+<hr>
+
+{% if user.post_set.count > 0 %}
+    <h3>Posts criados por {{ user.name }}</h3>
+    <ul>
+        {% for post in user.post_set.all %}
+            <li><a href="{% url 'posts:detail' post.id %}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <h3>{{ user.name }} Não possui posts.</h3>
+{% endif %}
+
+<hr>
+<p><a href="{% url 'users:index' %}">Voltar para a listagem de usuários</a></p>

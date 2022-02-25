@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Página Home da biblioteca</h1>
+    <p>Bem-vindo!</p>
+
+    <p>A biblioteca possui as seguintes estatísticas</p>
+    <ul>
+        <li><strong>Quantidade de livros: {{ num_books }}</strong></li>
+        <li><strong>Quantidade de cópias: {{ num_instances }}</strong></li>
+        <li><strong>Quantidade de cópias disponíveis: {{ num_instances_available }}</strong></li>
+        <li><strong>Quantidade de autores: {{ num_authors }}</strong></li>
+    </ul>
+
+    <p>Você já visitou essa página {{ num_visits }} vez(es)</p>
+{% endblock %}
+

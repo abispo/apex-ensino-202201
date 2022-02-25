@@ -1,0 +1,11 @@
+<h1>{{ post.title }}</h1>
+
+<textarea rows="10" cols="50">
+    {{ post.body }}
+</textarea>
+
+<hr>
+<p>Autor: <a href="{% url 'users:detail' post.user.id %}">{{ post.user }}</a></p>
+
+<hr>
+<p><a href="{% url 'posts:index' %}">Voltar para a listagem de posts</a></p>
