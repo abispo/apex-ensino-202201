@@ -38,6 +38,16 @@ def datenow():
 # }
 
 
+@app.route('/users', methods=['POST'])
+def create_user():
+    pass
+
+
+@app.route('/users', methods=['GET'])
+def get_all_users():
+    pass
+
+
 @app.route('/operation', methods=['POST'])
 def operation():
     data = request.json
